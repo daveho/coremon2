@@ -1,5 +1,5 @@
 CXX = g++
-CXXFLAGS = -g -Wall $(shell pkg-config gtkmm-4.0 --cflags)
+CXXFLAGS = -g -Wall -Iinclude $(shell pkg-config gtkmm-4.0 --cflags)
 
 SRCS = coremon2.cpp
 OBJS = $(SRCS:%.cpp=build/%.o)
