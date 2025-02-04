@@ -1,7 +1,7 @@
 CXX = g++
 CXXFLAGS = -g -Wall -Iinclude $(shell pkg-config gtkmm-4.0 --cflags)
 
-SRCS = coremon2.cpp
+SRCS = coremon2.cpp cpu.cpp
 OBJS = $(SRCS:%.cpp=build/%.o)
 
 EXE = build/coremon2
