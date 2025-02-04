@@ -74,6 +74,7 @@ void CPU::poll() {
                iowait  = std::stoul( m[6] ),
                irq     = std::stoul( m[7] ),
                softirq = std::stoul( m[8] );
+      (void) idle;
       
       // Set current stats for this Core
       core.now.user = user + nice;

@@ -2,6 +2,7 @@
 #define COREMON2_H
 
 #include <gtkmm/window.h>
+#include "cpu.h"
 
 class Coremon2Window : public Gtk::Window {
 public:
